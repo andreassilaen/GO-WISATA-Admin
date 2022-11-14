@@ -1,0 +1,1513 @@
+*{ padding: 0; margin: 0;}
+
+html {
+    scroll-behavior: smooth; /*--------- UNUTK BISA SCROLL SECARA SMOOTH SAAT KET KOLOM YANG AKAN DITUJU ---------*/
+}
+
+h {
+    color: rgb(0, 133, 122);
+}
+
+h4 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+body {
+    width: 1319px;
+    margin: auto;
+    background-color: rgb(250, 229, 201);
+    font-family: Source Sans Pro ExtraLight;
+    overflow-x: hidden; /* hilangkan scroll-bottom jika tidka tau masalahnya dimana.*/
+
+}
+
+
+footer {
+    margin: auto;  
+    background: rgb(24, 24, 24); 
+    color: rgb(51, 177, 166); 
+    text-align: center; 
+    padding: 30px;
+    position: relative;
+    bottom: 0px;
+    font-size: 18px;
+}
+
+footer a{
+    color: burlywood;
+    text-decoration: none;
+}
+
+header{
+    width: auto;
+    height: 90px;
+    margin: 0px;
+    padding: 5px 40px;
+    margin-bottom: 0px;  
+    background-color: rgb(80, 37, 37); 
+    position: relative;
+    top: 0px;
+    
+}
+
+header .kiri {
+    float: left;
+    height: 50px;
+    padding: 10px 0px;
+    margin: 5px 0px;
+    margin-left: 0px;
+    font-family: Garamond;
+    font-style: bold;
+}
+
+header .kiri h1 a {
+    padding: 5px;
+    float: right;
+    font-size: 45px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: rgb(255, 242, 225);
+    font-family: Garamond;
+    letter-spacing: 3px;
+    
+}
+
+header  img {
+    width: 80px;
+    height: 80px;
+    margin: 0px 20px;
+    margin-top: -5px;
+    margin-left: 50px;
+    float: left;
+    padding: 10px 5px;
+    background-color: rgba(252, 213, 255, 0.678);
+    z-index: 1;
+    
+}
+
+ 
+
+
+header .kanan {
+    width: 690px;
+    float: right;
+    height: 50px;
+    margin: 0px 0px;
+    margin-right: 20px;
+    margin-top: 5px;
+    padding: 20px 0px;
+    padding-bottom: 4px;
+    font-size: 18px;
+    background-color: transparent;
+    letter-spacing: 1px;
+}
+
+header ul li {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(6, 220, 248);
+    padding: 0px 40px;
+    padding-bottom: 30px;
+    float: left;
+    
+    line-height: 45px;
+    
+}
+
+header ul li ul{
+    /* kalao pakai display: none; itu ggak bisa tambahin transisi*/
+    opacity: 0;
+    display: none;
+    position: absolute;
+    margin-left: -20px;
+    z-index: 1;
+    padding-left: 24px;
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.493);
+    font-size: 14px;
+    
+    transition: 0.2s opacity ease-in-out, 0.3s margin ease-in-out;
+    margin-top: 15px;
+
+    
+
+    
+}
+header ul li:hover > ul{
+    display: block;
+    opacity: 1;
+    margin-top: 25px;
+    
+}
+
+
+
+header ul li ul li {
+    display: block;
+    float: none;
+    background: rgb(80, 37, 37);
+    padding: 0px 10px;
+    margin-left: -25px;
+    margin-bottom: -2px;
+    position: relative;
+    border-right: 1px solid rgba(0, 0, 0, 0.61);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.575);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.514);
+
+    transition: 0.2s opacity ease-in-out, 0.3s margin ease-in-out;
+
+}
+header ul ul{
+    border-top: 1px solid rgb(255, 242, 225);
+    padding-left: 10px;
+    border-left: 0px solid yellow;
+}
+
+header ul ul ul {
+    display: none;
+    position: absolute;
+    top: -20px;
+    right:-80px;
+    width: 40px;
+    margin-left: 10px;
+    box-shadow: -30px 10px 20px rgba(0, 0, 0, 0.87);
+    z-index: 1;
+    padding-left: 25px;
+    border-top: 0px;
+}
+
+
+
+header ul ul ul li {
+    z-index: 1;
+    margin-left: -40px;
+    border-left: 1px solid rgb(255, 242, 225);
+}
+
+
+
+header li:hover {
+    color: rgb(255, 242, 225);
+    transition: 0.5s ease-out;
+}
+
+header ul li:hover > ul {
+    display: block;
+}
+
+header ul li ul li:hover {
+    background: rgb(54, 54, 54);
+    transition: 0.5s ease-out;
+    
+}
+
+header ul li a {
+    text-decoration: none;
+     color: rgb(6, 220, 248);
+}
+
+header ul ul li a {
+    text-decoration: none;
+     color: rgb(6, 220, 248);
+}
+
+header ul ul ul li a {
+    text-decoration: none;
+     color: rgb(6, 220, 248);
+     margin: 0px;
+     margin-left: -20px;
+     margin-right: -10px;
+     padding: 10px 20px;
+     padding-right: 20px;
+     text-align: center;
+
+}
+
+header ul li a:hover { 
+    color: rgb(255, 242, 225);
+    transition: 0.5s ease-out;
+}
+
+header ul ul ul li a:hover {
+     color: rgb(255, 242, 225);
+     transition: 0.7s ease-out;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> A UL
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------  BARIS 1   */
+article .baris1 {
+    width: auto;
+    height: 700px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0px;
+    background-image: url(borobudur.gif);
+    background-size: 1320px;
+    
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    
+    box-shadow: 0px -3px 30px rgba(0, 0, 0, 0.596);
+}
+
+
+article .baris1 .kotak {
+    width: auto;
+    height: 660px;
+    background-color: rgba(12, 12, 12, 0.507);
+    position: relative;
+    top: 0px;
+    color: rgb(226, 223, 55);
+}
+
+article .baris1 .kotak {
+    color: white;
+}
+
+h2 { /*Warna garis Kuning di atas Borobudur*/
+    color: rgb(4, 187, 211);
+}
+
+article .baris1 .kata {
+    width: 900px;
+    position: absolute;
+    top: 145px;
+    left: 200px;
+    float: left;
+}
+
+article .baris1 .kata h1 {
+    font-size: 40px;
+}
+
+article .baris1 .kata h3 {
+    font-size: 20px;
+}
+
+article .kata button{
+    background-color: rgba(4, 187, 211, 0.918);
+    border: 2px solid rgb(4, 187, 211);
+    border-radius: 0px;
+    padding: 10px 30px;
+    color: black;
+    transition: 0.5s background ease-out, 2s transform ease-in 2s;
+    color: white;
+}
+
+article .kata button:hover {
+    background-color: transparent;
+    color: rgb(4, 187, 211);
+}
+
+/*----------------------------------------------------------------------------------------------- BARIS 1 KOTAK SEARCH */
+article .baris1 .kotak .kotakSearch {
+    background-color: rgb(255, 242, 225);
+    width: 900px;
+    padding: 10px;
+    padding-top: 10px;
+    border: 1px solid black;
+    border-bottom: 5px solid rgb(4, 187, 211);
+    border-radius: 2px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+    right: 200px;
+    font-size: 0px;
+}
+
+article .kotakSearch .isi{
+    overflow: hidden;
+}
+
+article .kotakSearch input {
+    line-height: 10px;
+    width: 150px;
+    border: 0px;
+    border: 0px;
+    color: grey;
+    padding: 15px 40px;
+    display: inline;
+    background-color: transparent;
+    font-size: 14px;
+    border-right: 1px solid grey;
+    outline: transparent;
+}
+
+article .kotakSearch select {
+    line-height: 0px;
+    display: inline;
+    border: 0px;
+    background-color: transparent;
+    border-right: 1px solid grey;
+    padding: 15px 15px;
+    padding-right: 85px;
+    color: grey;
+    margin-right: 10px;
+    font-size: 14px;
+    outline: transparent;
+}
+
+
+article .kotakSearch button {
+    display: inline;
+    padding: 15px 50px;
+    border: 2px solid rgb(4, 187, 211);
+    background-color: rgb(4, 187, 211);
+    color: white;
+    transition: 0.5s background ease-out, 2s transform ease-in 2s;
+    border-radius: 0px;
+    font-size: 16px;
+}
+
+article .kotakSearch button:hover {
+    background-color: transparent;
+    color: rgb(4, 187, 211);
+    font-style: italic;
+}
+/*---------------------------------------------------------------------------------------------  BARIS 2   */
+article .baris2 {
+    width: auto;
+    height: 550px;
+    color: black;
+    background-color: rgb(255, 242, 225);
+    text-align: center;
+    padding-top: 50px;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.377);
+    margin-top: -40px;
+    
+}
+
+.baris2 .gallery1{
+    width: auto;
+    float: left;
+    height: 380px;
+    background-color: transparent;
+}
+/*---------- paggination*/
+
+.baris2 .gallery2{
+    width: auto;
+    float: left;
+    background-color: white;
+    display: none;
+}
+
+.foto input:checked ~ .gallery1 {              
+    display: block;
+}   
+
+.baris2 .pagination{
+    float: left;
+    text-align: center;
+    margin-left: 610px;
+}
+
+
+.baris2 .pagination a {
+    padding: 2px 8px;
+    color: white;
+    background: burlywood;
+    border-radius: 100%;
+    text-decoration: none;
+    margin: 1.5px;
+    font-size: 16px;
+    transition: 0.2s background ease-in-out, 0.2s padding ease-in-out, 0.5s margin ease-in-out;
+}
+
+.baris2 .pagination a:hover:not(.active) {
+    background: cadetblue;
+    padding: 4px 10px;
+    margin: 0px 5px;
+}
+
+.baris2 .pagination a.active {
+    background: rgb(160, 95, 95);
+    padding: 6px 12px;
+    
+}
+
+/*----------- paggination*/
+
+article .baris2 .foto {
+    width: 233px;
+    height: 300px;
+    color: black;
+    background-color: transparent;
+    float: left;
+    position: relative;
+    margin: 15px;
+}
+
+.foto img{   /*tanpa .foto juga bisa sebenarnya*/
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    filter: brightness(60%);
+    margin-top: 10px;
+    transition: 0.2s width ease-in-out, 0.2s height ease-in-out, 0.2s margin ease-in-out, 0.2s filter ease-in-out, 0.3s box-shadow ease-in-out;
+}
+
+.foto img:hover {
+    filter: brightness(95%);
+    margin-top: 0px;
+    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.308);
+    width: 240px;
+    height: 317px;
+    
+}
+
+
+.foto .judul{
+    position: relative;
+    left: 15px;
+    bottom: 75px;
+    color: white;
+    text-align: left;
+    padding: 0px;
+}
+
+.foto .keterangan {
+    /* Pakai OPACTIY BIAR ADA TRANSISI NYA kalau pakai display gak bisa*/
+    opacity: 0;
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    background: rgba(80, 78, 78, 0.884);
+    background-color: rgba(97, 23, 23, 0.712);
+    color: white;
+    padding: 7px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: 0.3s opacity ease-in-out, 0.5s padding-left ease-in-out;
+    letter-spacing: 2px;
+    font-style: italic;
+    
+    
+}
+
+.foto:hover .keterangan {
+    /* Pakai OPACTIY BIAR ADA TRANSISI NYA NYA kalau pakai display gak bisa*/
+    opacity: 1;
+    color: white;
+    padding-left: 40px;
+}
+
+
+.foto button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid white;
+    transition: 0.5s background ease-in-out, 2s transform ease-in 2s;
+    font-size: 26px;
+    padding-bottom: 5px;
+}
+
+.foto button a{
+    color: black;
+    text-decoration: none;
+}
+
+.foto button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.foto button:hover a {
+    background-color: transparent;
+    color: white;
+}
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------  BARIS 3 */
+
+.baris3 {
+    width: auto;
+    height: 640px;
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+ .allHotel {
+    
+    width: 1250px;
+    height: 500px;
+    background-color: transparent;
+    color: white;
+    margin-left: 60px;
+    text-align: left;
+    
+}
+
+article .baris3 .hotel {
+    
+    top: 0px;
+    width: 370px;
+    height: 520px;
+    color: black;
+    float: left;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(253, 243, 234);
+    margin: 15px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    text-align: left;
+    
+   
+}
+
+.hotel img {
+    width: 370px;
+    height: 280px;
+    position: relative;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    filter: brightness(70%);
+    transition: 0.4s filter ease-in-out, 0.2s margin-bottom ease-in-out;
+
+}
+
+.hotel img:hover {
+    filter: brightness(105%);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.418);
+    
+    margin-bottom: 10px;
+}
+
+
+.hotel h1 {
+    font-size: 30px;
+}
+
+.hotel h5{
+    font-size: 17px;
+}
+
+.hotel h {
+    color: rgb(0, 174, 197);
+}
+
+.hotel .date {   /* --- DATE = ROOMS LEFT ---- */
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    background-color: rgb(0, 174, 197);
+    padding: 22px 15px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    filter: brightness(110%)
+}
+
+.date h1 {
+    font-size: 27px;
+    letter-spacing: 2px;
+}
+
+.date h5 {
+    letter-spacing: 0.5px;
+    font-size: 13px;
+}
+
+.hotel .date  {
+    font-size: 20px;
+    letter-spacing: 0px;
+
+}
+
+.hotel .stars {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    padding: 15px;
+    filter: brightness(200%);
+}
+
+.stars p {
+    font-size: 50px;
+    color: white;
+    font-family:fantasy;
+}
+
+.stars img {
+    width: 17px;
+    height: 17px;
+    filter: brightness(200%);
+}
+
+.hotel .judul {
+    margin: 15px;
+}
+
+.judul h1{
+    margin-left: 14px;
+    font-size: 25px;
+}
+
+.judul h{
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.hotel p {
+    margin: 15px;
+}
+
+
+.hotel .b1 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-top: 1px solid rgba(128, 128, 128, 0.37);
+    border-right: 1px solid rgba(128, 128, 128, 0.37);
+    border-bottom-left-radius: 7px;
+    float: left;
+    height: 48px;
+    background-color: rgb(253, 243, 234);
+    
+    padding: 0px 13px;
+    padding-left: 13px;
+    color: black;
+    
+    
+    transition: 0.2s height ease-in-out, 0.3s box-shadow ease-in-out, 0.3s padding ease-in-out;
+    
+}
+
+.hotel .b2 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-top: 1px solid rgba(128, 128, 128, 0.37);
+    border-left: 1px solid rgba(128, 128, 128, 0.37);
+    border-bottom-right-radius: 7px;
+    float: left;
+    height: 48px;
+    background-color: rgb(253, 243, 234);
+    
+    padding: 0px 13px;
+    padding-right: 13px;
+    color: black;
+    
+    transition: 0.2s height ease-in-out, 0.3s box-shadow ease-in-out, 0.3s padding ease-in-out, 0.0s border-radius ease-in-out;
+
+}
+
+.hotel .b1 p, 
+.hotel .b2 p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    
+}
+
+.hotel .b1:hover {
+    color: rgb(6, 152, 172);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301);
+    height: 52px;
+    border-bottom-left-radius: 7px;
+    padding:0px 15px;
+    z-index: 1;
+    
+    
+    
+}
+.hotel .b2:hover {
+    color: rgb(6, 152, 172);
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.301);
+    height: 52px;
+    border-bottom-right-radius: 7px;
+    padding:0px 15px;
+    z-index: 1;
+   
+    
+}
+
+/*------------------------------------------------------------------------------------------ BARIS OUR SERVICE */
+.barisOurService {
+    width: auto;
+    height: 570px;
+    background-color: rgb(255, 242, 225);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.322);
+    margin-bottom: 0px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.barisOurService h4 {
+    margin-top: 50px;
+    
+}
+
+.barisOurService h3 {
+    margin-bottom: 30px;
+}
+
+.barisOurService .allKotak {
+    width: 1200px;
+    margin-left: 70px;
+}
+
+.barisOurService .kotakService {
+    width: 320px;
+    height: 300px;
+    background: transparent;
+    padding: 20px;
+    margin: 15px;
+    float: left;
+    border: 1px solid rgba(128, 128, 128, 0.527);
+    border-radius: 10px;
+    position: relative;
+}
+
+.kotakService img {
+    width: 70px;
+    height: 70px;
+    margin: 30px 0px;
+    
+    
+    transition: 0.2s width ease-in-out, 0.2s height ease-in-out, 0.2s margin ease-in-out;
+    
+}
+
+.kotakService img:hover {
+    width: 85px;
+    height: 85px;
+    margin-top: 25px;
+    
+}
+
+.barisOurService .kotakService h3 {
+    margin-bottom: 10px;
+}
+
+.kotakService p {
+    
+    line-height: 30px;
+    margin-top: 0px; 
+    font-size: 15px;
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------ BARIS TEMPLES */
+.barisTemples {
+    width: auto;
+    height: 570px;
+    background-color: rgb(255, 242, 225);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.377);
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+.barisTemples h4 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.barisTemples .biodata {
+    width: 250px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 45px;
+    margin-right: 40px;
+    border: 0px solid rgba(0, 0, 0, 0.267);
+    border-radius: 15px;
+    padding: 15px;
+    background-color: rgb(97, 0, 0);
+    transition: 1s background ease-in-out, 0.2s box-shadow ease-in-out;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.barisTemples .biodata:hover {
+    box-shadow: 10px 10px 1px rgba(51, 0, 0, 0.658);
+}
+
+.biodata p, h {
+    margin-left: 15px;
+    color: white;
+}
+
+.barisTemples .biodata p d {
+    color: rgb(255, 253, 159);
+    
+    padding: 0px 10px;
+    text-align: left;
+    float: right;
+    width: 130px;
+}
+
+.biodata img {
+    width: 150px;
+    height: 150px;
+    margin: 30px 50px;
+    border-radius: 15px;
+    transition: 1s background ease-in-out, 0.2s box-shadow ease-in-out, 0.2s filter ease-in-out;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    filter: brightness(95%);
+}
+
+.biodata img:hover {
+    box-shadow: 10px 10px 1px rgba(51, 0, 0, 0.658);
+    filter: brightness(110%);
+}
+
+.barisTemples .kiri2 {
+    width: 380px;
+    float: left;
+    margin-left: 0px;
+    margin-top: 80px;
+    margin-right: 30px;
+    
+}
+.barisTemples .kanan2 {
+    
+    float: right;
+    margin-right: 20px;
+    margin-top: 80px;
+
+}
+
+.biodata,
+.kiri2 p,
+.kanan2 p {
+    letter-spacing: 0.5px;
+}
+
+.kiri2 button{
+    background-color: rgba(4, 187, 211, 0.918);
+    border: 2px solid rgb(4, 187, 211);
+    border-radius: 0px;
+    padding: 10px 30px;
+    color: black;
+    transition: 0.5s background ease-out, 2s transform ease-in 2s;
+    color: white;
+}
+
+.kiri2 button:hover {
+    background-color: transparent;
+    color: rgb(4, 187, 211);
+}
+
+.kotakRadio {
+    width: 500px;
+    padding-left: 15px;
+    line-height: 50px;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+}
+
+.kanan2 input {
+    float: right;
+    margin: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.kanan2 .isiradio{
+    display: none;
+    border-top: 1px solid rgba(128, 128, 128, 0.37);
+    width: 480px;
+    height: auto;
+}
+
+.kanan2 .isiradio p {
+    margin: 15px 0px;
+    color: rgb(0, 141, 160);
+    line-height: 25px;
+    
+}
+
+/*---!!!!----- kalo radio cek active keluar isi (~) ----!!!----*/   
+.kanan2 input:checked ~ .isiradio {              
+    display: block;
+}
+
+/*------------------------------------------------------------------------------------------ BARIS VIDEO */
+.barisVideo {
+    width: 1319px;
+    height: 550px;
+    position: relative;
+    /*background-image: url(pemandangan.gif);
+    background-image: url();
+    background-size: 1320px;
+    background-repeat: no-repeat;*/
+    background: transparent;
+    
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.562);
+
+}
+
+.barisVideo iframe {
+    width: 1319px;
+    height: 550px;
+    filter: brightness(90%);
+    transition: 1s filter ease-in-out;
+}
+
+
+
+.barisVideo .kotakVideo {
+    position: absolute;
+    opacity: 0;
+    width: 1319px;
+    height: 150px;
+    background-color: rgba(5, 5, 5, 0.938);
+    padding-bottom: 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 0.5s opacity ease-in-out, 0.5s background ease-in-out, 0.5s padding-top ease-in-out;
+    text-align: center;
+}
+
+.kotakVideo .kataVideo {
+    width: auto;
+    top: 0px;
+    margin-left: 390px;
+    
+    float: left;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.barisVideo .kataVideo img {
+    width: 60px;
+    height: 60px;
+    filter: brightness(1000%);
+    border-radius: 50%;
+    transition: 0.5s background ease-in-out;
+}
+
+.barisVideo:hover > .kotakVideo {
+    opacity: 1;
+    padding-top: 50px
+    
+}
+
+.barisVideo .kataVideo img:hover{
+    background-color: rgba(2, 15, 15, 0.801);
+}
+
+.barisVideo .kotakVideo2 {
+    position: absolute;
+    width: auto;
+    height: auto;
+    background-color: rgb(0, 144, 163);
+    padding: 10px;
+    position: absolute;
+    bottom: 145px;
+    right: 37%;
+    transition: 0.5s background ease-in-out, 0.5s padding ease-in-out;
+    text-align: center;
+    color: white; 
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0) ;
+}
+
+.barisVideo .kotakVideo2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.barisVideo .kotakVideo2 p {
+    font-size: 25px;
+    transition: 0.2s padding ease-in-out;
+    
+}
+
+.barisVideo .kotakVideo2 p:hover {
+    padding: 5px 0px;
+    color: white;
+}
+
+/*-----------------------------------------------------------------------------------------  BARIS HARGA */
+.barisPrice {
+    margin: 0px;
+    width: 1319px;
+    height: 650px;
+    text-align: center;
+    padding: 50px 0px;
+    background-color: rgb(255, 242, 225);
+}
+
+.barisPrice .kotakBig {
+    width: 1200px;
+    height: auto;
+    background-color: white;
+    margin-left: 90px;
+}
+
+.barisPrice .kotakPrice{
+    width: 350px;
+    height: auto;
+    float: left;
+    margin: 15px;
+    background-color: rgb(253, 243, 234);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.377);
+}
+
+.kotakPrice .judulPrice {
+    width: auto;
+    height: 120px;
+    padding: 20px 15px;
+    background-color: rgb(0, 174, 197);
+    background-color: rgba(80, 37, 37, 0.877);
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 7px 0px rgb(0, 174, 197);
+}
+
+.kotakPrice .judulPrice h1 c{
+    font-size: 45px;
+    color: rgb(194, 255, 95);
+}
+
+.kotakPrice .judulPrice h4 {
+    margin-top: 5px;
+    
+}
+
+.kotakPrice .isiPrice {
+    width: auto;
+    height: auto;
+    margin: 30px;
+}
+
+.kotakPrice .isiPrice p {
+    margin: 10px;
+}
+
+/*---- button dari a------*/
+.kotakPrice a{
+    text-decoration: none;
+}
+
+.kotakPrice b {
+    text-align: center;
+    text-decoration: none;
+    width: 75px;
+    padding: 10px 18px;
+    border: 2px solid rgb(4, 187, 211);
+    border-radius: 3px;
+    background-color: rgb(4, 187, 211);
+    transition: 0.5s background ease-out, 2s transform ease-in 2s;
+    
+    color: white;
+    font-size: 18px;
+
+}
+
+.kotakPrice b:hover {
+    background-color: transparent;
+    color: rgb(4, 187, 211);
+    font-style: bold;
+}
+
+
+.kotakPrice button{
+    text-align: center;
+    text-decoration: none;
+    
+    padding: 15px;
+    border: 2px solid rgb(4, 187, 211);
+    border-radius: 3px;
+    background-color: rgb(4, 187, 211);
+    transition: 0.5s background ease-out, 2s transform ease-in 2s;
+    
+    color: white;
+    font-size: 18px;
+}
+
+.kotakPrice button:hover {
+    background-color: transparent;
+    color: rgb(4, 187, 211);
+    font-style: bold;
+}
+
+
+/*-----------------------------------------------------------------------------------------  BARIS MAP  */
+.barisMap {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 0px;
+    background-color: rgb(255, 242, 225);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.377);
+    
+}
+
+
+.barisMap iframe {
+    width: 1319px;
+    height: 500px;
+    margin-bottom: -4px;
+}
+
+
+/*-----------------------------------------------------------------------------------------  BARIS CONTACT  */
+article .barisContact {
+
+    width: auto;
+    height: 400px;
+    text-align: center;
+    background-color: rgb(255, 242, 225);
+    padding-top: 50px;
+    
+}
+
+
+
+
+.barisContact .kotak button {
+    display: inline;
+    padding: 10px 20px;
+    margin-top: 50px;
+    border: 2px solid rgb(4, 187, 211);
+    background-color: rgb(4, 187, 211);
+    color: white;
+    transition: 0.5s background ease-out, 2s transform ease-in 2s;
+    border-radius: 3px;
+    font-size: 16px;
+
+}
+
+.barisContact .kotak button:hover {
+    background-color: transparent;
+    color: rgb(5, 178, 201);
+    font-style: bold;
+}
+
+article h {
+    font-size: 20px;
+}
+
+article p {
+    font-size: 16px;
+}
+
+article a p{
+    color: black;
+    transition: 0.5s color ease-in-out;
+}
+
+article a p:hover {
+    color:rgb(4, 187, 211);
+}
+
+.barisContact b {
+    text-align: center;
+    text-decoration: none;
+    width: 75px;
+    padding: 10px 18px;
+    border: 2px solid rgb(4, 187, 211);
+    border-radius: 3px;
+    background-color: rgb(4, 187, 211);
+    transition: 0.5s background ease-out, 2s transform ease-in 2s;
+    
+    margin-left: 601px;
+    color: white;
+    font-size: 18px;
+
+}
+
+.kotak b {
+    float: left;
+}
+
+.barisContact b:hover {
+    background-color: transparent;
+    color: rgb(4, 187, 211);
+    font-style: bold;
+}
+
+
+/*----------------------------------------------------------------------------------------------------- FORM CONTACT   */
+
+article .backgroundForm{ 
+    width: 1319px;
+    height: auto;
+    padding-bottom: 120px;
+    padding-top: 60px;
+    background-color: rgba(32, 32, 32, 0.747);
+    position: absolute;
+    bottom: 0px;
+    left: 270px;
+    position: sticky;
+
+}
+
+.backgroundForm .formContact { 
+    width: 850px;
+    height: 500px;
+    background: burlywood;
+    position: absolute;
+    bottom: 80px;
+    left: 270px;
+    position: sticky;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px rgb(22, 155, 179);
+}
+
+.formContact a {
+    color: rgb(255, 246, 161);
+    text-decoration: none;
+}
+
+.formContact h4 {
+    padding-top: 15px;
+    margin-left: 30px;
+    color: rgb(148, 2, 2);
+}
+
+.formContact h3 {
+    margin-left: 30px;
+}
+
+.formContact h{
+    margin: 0px;
+}
+
+.formContact .kiridlm {
+    width: 500;
+    height: 320px;
+    margin: 30px;
+    float: left;
+}
+.formContact .kanandlm {
+    width: 230px;
+    margin: 30px;
+    float: right;
+    background: rgb(83, 39, 39);
+    padding: 35px;
+    padding-bottom: 48px;
+    border-bottom-right-radius: 10px ;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    color: white;
+}
+
+.kiridlm input {
+    width: 190px;
+    margin-right: 30px;
+    padding: 10px 0px;
+    padding-left: 15px;
+    background-color: rgb(255, 243, 211);
+
+    border: 0px;
+    outline: transparent;
+    font-size: 13px;
+}
+
+
+
+.kiridlm textarea {
+    float: left;
+    margin-top: 40px;
+    background-color: rgb(255, 243, 211);
+    border: 0px;
+    outline: transparent;
+    padding: 15px;
+    font-size: 13px;
+    font-family: Source Sans Pro ExtraLight;
+    color: black;
+    
+}
+
+
+.formContact .closeForm{
+    width: 30px;
+    height: 30px;
+    background: rgb(32, 32, 32);
+    position: absolute;
+    text-align: center;
+    padding: 15px;
+    border-radius: 100%;
+    border: 4px solid rgb(70, 210, 253);
+    top: -30px;
+    right: -30px;
+    transition: 0.5s background ease-out, 0.2s font-size ease-in-out,
+    0.2s width ease-in-out, 0.2s height ease-in-out, 0.2s top ease-in-out, 0.2s right ease-in-out;
+}
+
+.closeForm a {
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.closeForm h3 {
+    font-size: 25px;
+}
+
+.closeForm:hover {
+    background-color: rgb(0, 0, 0);
+    font-size: 25px;
+    width: 35px;
+    height: 35px;
+    top: -33px;
+    right: -33px;
+}
+
+.formContact b {
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    padding: 5px 5px;
+    border: 2px solid rgb(2, 171, 194);
+    border-radius: 3px;
+    background-color: rgb(3, 162, 184);
+    transition: 0.5s background ease-out, 0.5s padding ease-in-out;
+    
+    float: left;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    bottom: 70px;
+    left: 30px;
+    
+    z-index: 1;
+
+}
+
+.formContact b {
+    float: left;
+}
+
+.formContact b:hover {
+    background-color: rgba(0, 0, 0, 0.527);
+    color: rgb(4, 173, 196);
+    font-style: bold;
+    padding: 5px 10px;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------------  BARIS AKHIR  */
+article .barisAkhir {
+    width: auto;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-color: rgb(255, 242, 225);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.377);
+
+}
+
+article .barisAkhir img {
+    width: 35px;
+    height: 35px;
+    padding-right: 0px;
+    transition: 0.5s background ease-out;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.barisAkhir .logo img:hover {
+    background-color: rgb(245, 181, 250);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.barisAkhir a img:hover {
+    background-color: rgb(137, 241, 255);
+    border-radius: 50%;
+
+}
+
+article .barisAkhir .a1 {
+    position: relative;
+    float: left;
+    width: 400px; 
+    margin-left: 100px;
+    margin-right: 10px;
+    bottom: 0px;
+    margin-bottom: -30px;
+}
+
+article .barisAkhir .a1 .logo img {
+    width: 80px;
+    height: 80px;
+    float: left;
+    transition: 0.5s padding ease-out, 0.8s background ease-in-out;
+}
+
+article .barisAkhir .a1 h4 {
+    float: left;
+    font-size: 40px;
+    font-family: Garamond;
+    margin-top: 5px;
+    letter-spacing: 1.5px;
+    
+}
+
+article .barisAkhir .a2 {
+    float: left;
+    width: 410px; 
+    height: 200px;
+    margin-right: 0px;
+  
+}
+
+article .barisAkhir .a2 ul li {
+    display: block;
+    float: left;
+    width: 200px;
+    
+}
+
+article .barisAkhir .a2 ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.5s color ease-in-out;
+    padding-left: 10px;
+}
+
+article .barisAkhir .a2 ul li a:hover {
+    color: rgb(0, 180, 204);
+}
+
+article .barisAkhir li{
+    list-style: none;
+    letter-spacing: 1px;
+    
+}
+
+article .barisAkhir li::before {
+    content: "\2742";
+}
+
+
+article .barisAkhir .a3 {
+    float: left;
+    width: 300px;
+    margin-right: 0px;
+    margin-left: -30px;
+}
